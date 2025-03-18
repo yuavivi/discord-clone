@@ -1,0 +1,130 @@
+.sidebar {
+  display: flex;
+  flex: 0.25;
+  height: 100vh;
+  // background-color: #33363d; // ToDo:homeで指定する
+
+  .sidebarLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a1c20;
+    padding: 7px 15px;
+
+    .sidebarDiscordIcon {
+      width: 60px;
+      height: 60px;
+      background-color: #33363d;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      border-bottom: white;
+      position: relative; // 親
+      margin-top: 10px;
+
+      img {
+        position: absolute; // 子
+        width: 40px;
+        top: 50%; // 絶対値を決めている。親要素の50%から50px上に移動
+        left: 50%; // 絶対値を決めている。親要素の50%から50px左に移動
+        transform: translate(-50%, -50%); // 子要素を中央に移動
+      }
+    }
+
+    .sidebarIcon {
+      width: 60px;
+      height: 60px;
+      background-color: #33363d;
+      border-radius: 9999px;
+      margin-bottom: 10px;
+      position: relative; // 親
+      margin-top: 10px;
+
+      img {
+        position: absolute; // 子
+        width: 40px;
+        top: 50%; // 絶対値を決めている。親要素の50%から50px上に移動
+        left: 50%; // 絶対値を決めている。親要素の50%から50px左に移動
+        transform: translate(-50%, -50%); // 子要素を中央に移動
+      }
+    }
+  }
+
+  .sidebarRight {
+    background-color: #2b2d33;
+    width: 300px;
+    position: relative;
+    flex-grow: 1; // 余白を埋める
+
+    .sidebarTop {
+      color: white;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .sidebarChannels {
+      padding: 10px;
+
+      .sidebarChannelHeader {
+        color: white;
+        display: flex;
+        height: 30px;
+        align-items: center;
+
+        .sidebarHeader {
+          display: flex;
+          h4 {
+            padding-left: 10px;
+          }
+        }
+        .sidebarAddIcon {
+          cursor: pointer;
+          margin: 0 0 0 auto;
+          padding-right: 10px;
+        }
+      }
+    }
+
+    .sidebarFooter {
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 93%;
+      padding-bottom: 10px;
+      border-top: 1px solid #686a6e; // 上線
+      padding-top: 10px;
+      margin-left: -3px;
+
+      .sidebarAccount {
+        display: flex;
+        align-items: center;
+        img {
+          width: 60px;
+          border-radius: 50%; // 丸くする
+        }
+
+        .accountInfo {
+          padding-left: 15px;
+          h4 {
+            color: white;
+            font-weight: 500;
+            margin: 0%;
+          }
+          span {
+            color: #686a6e;
+          }
+        }
+      }
+
+      .sidebarVoice {
+        display: flex;
+        align-items: center;
+        color: #686a6e;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.chatHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 10px;
+
+  .chatHeaderLeft {
+    padding-left: 15px;
+
+    .chatHeaderHash {
+      color: #7b7c85;
+      padding-right: 7px;
+    }
+    h3 {
+      color: white;
+    }
+  }
+
+  .chatHeaderRight {
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 13px; // 要素の間隔を設定
+    color: #7b7c85;
+
+    .chatHeaderSearch {
+      display: flex;
+      align-items: center;
+      background-color: #40404a;
+      padding: 3px;
+      border-radius: 3px; // 角丸
+
+      input {
+        background: transparent; // 背景を透明に
+        outline: none; // フォーカス時の枠線を消す
+        color: white;
+        border: none; // 枠線を消す
+      }
+    }
+    // チャットヘッダーのアイコン
+    .MuiSvgIcon-root {
+      cursor: pointer; // マウスを重ねた時にカーソルをポインターに変更
+    }
+  }
+}
