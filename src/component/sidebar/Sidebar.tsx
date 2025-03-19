@@ -54,8 +54,8 @@ const Sidebar = () => {
             <SidebarChannel />
             <SidebarChannel />
           </div>
-
-          <div className="sidebarFooter">
+        </div>
+        <div className="sidebarFooter">
             <div className="sidebarAccount">
               <img src="./dummyIcon.jpg" alt="" />
               <div className="accountInfo">
@@ -69,7 +69,6 @@ const Sidebar = () => {
               <SettingsIcon />
             </div>
           </div>
-        </div>
       </div>
     </div>
   );

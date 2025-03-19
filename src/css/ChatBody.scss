@@ -3,32 +3,48 @@
   flex-direction: column;
   flex-grow: 1;
   background-color: #33363d;
+  height: 100vh;
 
   .chatMessage {
     flex-grow: 1;
-    padding: 30px;
+    padding: 25px;
     overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      display: none; /* スクロールバーを非表示 */
+    }
   }
   .chatInput {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px;
+    padding: 5px;
     background-color: #474b53;
     border-radius: 5px;
     margin: 20px;
     color: lightgray;
+    max-height: 30%;
+    
 
     form {
       flex-grow: 1;
-      input {
+      
+      textarea {
+        max-height: 30%;
         padding: 15px;
         background: transparent; // 背景を透明に
         border: none;
         outline: none;
         color: white;
         font-size: large;
-        width: 100%;
+        width: 96%;
+        resize: none;
+        padding-right: 10px;
+        text-decoration: none;
+
+        &::-webkit-scrollbar {
+          display: none; /* スクロールバーを非表示 */
+        }
       }
       .chatSendButton {
         display: none; // ボタンを非表示

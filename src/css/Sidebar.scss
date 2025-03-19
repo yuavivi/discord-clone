@@ -53,7 +53,10 @@
     background-color: #2b2d33;
     width: 300px;
     position: relative;
-    flex-grow: 1; // 余白を埋める
+    // 部分だけスクロール
+    display: flex;
+    flex-direction: column; /* 縦並び */
+    height: 100vh;
 
     .sidebarTop {
       color: white;
@@ -66,6 +69,9 @@
 
     .sidebarChannels {
       padding: 10px;
+      overflow-y: scroll; // スクロールバーを表示
+      width: auto;
+      flex-grow: 1; // 余白を埋める
 
       .sidebarChannelHeader {
         color: white;
@@ -85,10 +91,14 @@
           padding-right: 10px;
         }
       }
-    }
 
+      &::-webkit-scrollbar {
+        display: none; /* スクロールバーを非表示 */
+      }
+    }
     .sidebarFooter {
-      position: absolute;
+      height: 60px;
+      position: static;
       bottom: 0;
       display: flex;
       align-items: center;
@@ -97,7 +107,7 @@
       padding-bottom: 10px;
       border-top: 1px solid #686a6e; // 上線
       padding-top: 10px;
-      margin-left: -3px;
+      margin-left: 10px;
 
       .sidebarAccount {
         display: flex;
@@ -124,6 +134,7 @@
         display: flex;
         align-items: center;
         color: #686a6e;
+        gap: 10px;
       }
     }
   }

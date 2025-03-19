@@ -17,11 +17,15 @@ export const ChatBody = () => {
         <ChatMessage />
         <ChatMessage />
         <ChatMessage />
+        <ChatMessage />
+        <ChatMessage />
+        <ChatMessage />
+        <ChatMessage />
       </div>
       <div className="chatInput">
         <AddCircleIcon />
         <form>
-          <input type="text" placeholder="メッセージを入力" />
+          <textarea name="message" placeholder="メッセージを入力..." />
           <button type="submit" className="chatSendButton">
             送信
           </button>
