@@ -1,0 +1,103 @@
+.login {
+  background-image: url("../../public/img/loginBackground.png");
+  background-color: black;
+  background-size: cover; /* 画面全体に表示 */
+  background-position: center; /* 画像の位置を中央に設定 */
+  background-repeat: no-repeat; /* 画像が繰り返し表示されないように */
+  height: 100vh; /* 画面全体をカバー */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .loginIcon {
+    width: 50%;
+    max-width: 100px;
+    // cursor: pointer;
+
+    // &:hover {
+    //   filter: brightness(0.6);
+    // }
+  }
+
+  .loginInfo {
+    background-color: #37393f;
+    width: 600px;
+    display: flex;
+    align-items: center;
+
+    span {
+      color: #e84144;
+    }
+
+    a {
+      color: #149cd9;
+      cursor: pointer;
+    }
+
+    .loginInput {
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 30px;
+
+      h2 {
+        margin-bottom: 15px;
+        color: white;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      p {
+        color: #a9abaf;
+        font-size: small;
+        margin-bottom: 3px;
+      }
+
+      input {
+        margin-bottom: 20px;
+        background-color: #202225;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 6px;
+      }
+
+      .loginButton {
+        cursor: pointer;
+        height: 35px;
+        background-color: #5765f1;
+        color: white;
+        border: none;
+        margin-bottom: 10px;
+
+        &:hover {
+          background-color: #4b5ae8;
+        }
+      }
+    }
+
+    .googleLogin {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        margin-top: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      img {
+        width: 100px;
+        margin-left: 70px;
+        margin-right: 70px;
+        cursor: pointer;
+
+        &:hover {
+          filter: brightness(0.6);
+        }
+      }
+    }
+  }
+}

@@ -2,9 +2,9 @@ import { createSlice } from '@reduxjs/toolkit';
 
 interface InitialUserState {
     user: null | {
-        id: string;
-        photo: string;
-        email: string;
+        userId: string;
+        userIcon: string;
+        userEmail: string;
         displayName: string;
     };
 }
@@ -26,4 +26,5 @@ export const userSlice = createSlice({
     },
     });
 
+export const { login, logout } = userSlice.actions;
 export default userSlice.reducer;

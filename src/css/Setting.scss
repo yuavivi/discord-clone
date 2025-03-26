@@ -1,0 +1,38 @@
+.settingList {
+  background-color: #232227;
+  width: 60%;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  bottom: 62px;
+  right: 0;
+  padding: 10px 3px;
+  margin-right: 10px;
+  color: #a5a5a9;
+
+  li {
+    border: black;
+    cursor: pointer;
+    list-style-type: none;
+    padding: 10px;
+    padding-left: 15px;
+    border-bottom: 1px solid #ccc;
+    border-color: #3b3b3d;
+
+    &:hover {
+      background-color: #1c1b1f;
+    }
+  }
+
+  .logoutText {
+    color: #e05359;
+  }
+
+  .settingListFooter {
+    display: flex;
+    gap: 7px;
+    padding-left: 13px;
+    padding-top: 10px;
+    cursor: pointer;
+  }
+}

@@ -2,7 +2,6 @@
   display: flex;
   flex: 0.25;
   height: 100vh;
-  // background-color: #33363d; // ToDo:homeで指定する
 
   .sidebarLeft {
     display: flex;
@@ -27,6 +26,7 @@
         top: 50%; // 絶対値を決めている。親要素の50%から50px上に移動
         left: 50%; // 絶対値を決めている。親要素の50%から50px左に移動
         transform: translate(-50%, -50%); // 子要素を中央に移動
+        cursor: pointer;
       }
     }
 
@@ -45,6 +45,7 @@
         top: 50%; // 絶対値を決めている。親要素の50%から50px上に移動
         left: 50%; // 絶対値を決めている。親要素の50%から50px左に移動
         transform: translate(-50%, -50%); // 子要素を中央に移動
+        border-radius: 50%; // 丸くする
       }
     }
   }
@@ -72,6 +73,7 @@
       overflow-y: scroll; // スクロールバーを表示
       width: auto;
       flex-grow: 1; // 余白を埋める
+      position: relative;
 
       .sidebarChannelHeader {
         color: white;
@@ -133,8 +135,10 @@
       .sidebarVoice {
         display: flex;
         align-items: center;
+        position: relative;
         color: #686a6e;
         gap: 10px;
+        cursor: pointer;
       }
     }
   }
