@@ -16,7 +16,6 @@ function Setting() {
           databases.forEach((db) => indexedDB.deleteDatabase(db.name as string)); // IndexedDBを削除
         });
         window.location.reload();
-        console.log(localStorage);
     });
   };
   return (

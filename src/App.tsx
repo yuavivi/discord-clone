@@ -24,7 +24,7 @@ function App() {
       } else {
         dispatch(logout());
       }
-      
+      console.log(userState);
     });
   }, [dispatch]);
 
